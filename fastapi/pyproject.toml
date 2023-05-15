@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "hw11"
+version = "0.1.0"
+description = ""
+authors = ["Denys Zaitsev <denzai83@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+SQLAlchemy = "^2.0.11"
+psycopg2 = "^2.9.6"
+alembic = "^1.10.4"
+pydantic = {extras = ["email"], version = "^1.10.7"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+libgravatar = "^1.0.4"
+fastapi-mail = "^1.2.8"
+fastapi-limiter = "^0.1.5"
+python-dotenv = "^1.0.0"
+redis = "^4.5.5"
+cloudinary = "^1.32.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
